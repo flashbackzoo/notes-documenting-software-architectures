@@ -31,9 +31,9 @@ A good architecture is useless if people using it don't know what it is, can't u
 
 It delivers value to developers, deployers, testers, and clients.
 
-- Education: New team members, third party developers, or product owners.
-- Communication: Explaining how a feature is implemented or discussing an approach for a new feature.
-- Analysis: Provides a view of what needs to be tested when modifying or adding new code. Ensures features are implemented in accordance with the system's [quality attributes](#quality-attributes).
+- **Education**. New team members, third party developers, or product owners.
+- **Communication**. Explaining how a feature is implemented or discussing an approach for a new feature.
+- **Analysis**. Provides a view of what needs to be tested when modifying or adding new code. Ensures features are implemented in accordance with the system's [quality attributes](#quality-attributes).
 
 ### Quality Attributes
 
@@ -43,9 +43,9 @@ Architecture is where these concerns are addressed.
 
 Different quality attributes require different attention. For example:
 
-- Performance: Exploit parallelism
-- Security: Identify where unauthorised intrusion will do the most damage
-- Modifiability: Separate concerns so changes are isolated
+- **Performance**. Exploit parallelism
+- **Security**. Identify where unauthorised intrusion will do the most damage
+- **Modifiability**. Separate concerns so changes are isolated
 
 ## Architecture Views
 
@@ -94,9 +94,9 @@ Module views document a system's principal units and the way they are decomposed
 
 Module views are used for:
 
-- Construction. Provide a blueprint for source code.
-- Analysis. Requirements traceability and impact analysis.
-- Communication. Explain the system's functionality.
+- **Construction**. Provide a blueprint for source code.
+- **Analysis**. Requirements traceability and impact analysis.
+- **Communication**. Explain the system's functionality.
 
 ### Decomposition Style
 
@@ -112,6 +112,16 @@ When to use a decomposition view:
 Also useful for reasoning about and communicating the structure of software.
 
 ### Uses Style
+
+A module *uses* another module if its correctness depends on the correctness of the other.
+
+The uses styles goes a step further than the decomposition style. It reveals which modules use other modules.
+
+The uses style is useful for:
+
+- Planning incremental development
+- Debugging and testing
+- Risk analysis and change impact
 
 ### Generalisation Style
 
