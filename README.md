@@ -9,7 +9,15 @@ Notes on the book [Documenting Software Architectures: Views and Beyond](http://
     - [Quality Attributes](#quality-attributes)
 - [Architecture Views](#architecture-views)
 - [Architecture Styles](#architecture-styles)
-    - [Module Styles](#module-styles)
+- [Module Views](#module-views)
+    - [Decomposition Style](#decomposition-style)
+    - [Uses Style](#uses-style)
+    - [Generalisation Style](#generalisation-style)
+    - [Layered Style](#layered-style)
+    - [Aspects Style](#aspects-style)
+    - [Data Model Style](#data-model-style)
+- [Component-and-connector Views](#component-and-connector-views)
+- [Allocation Views](#allocation-views)
 
 ## Overview
 
@@ -66,6 +74,8 @@ The documentation that applies to all of the view contains:
 
 ## Architecture Styles
 
+When you apply a style to a system, the result is a view.
+
 There is no fixed set of views that is appropriate for every system. There are some broad guidelines which can help:
 
 - How the software is structured as a set of implementation units.
@@ -74,8 +84,47 @@ There is no fixed set of views that is appropriate for every system. There are s
 
 The are three categories of styles in the book:
 
-- [Module styles](#module-styles)
-- Component-and-constructor styles
+- Module styles
+- Component-and-connector styles
 - Allocation styles
 
-### Module Styles
+## Module Views
+
+Module views document a system's principal units and the way they are decomposed to make the system.
+
+Module views are used for:
+
+- Construction. Provide a blueprint for source code.
+- Analysis. Requirements traceability and impact analysis.
+- Communication. Explain the system's functionality.
+
+### Decomposition Style
+
+The decomposition style is used for decomposing a system into units of implementation. A decomposition view describes the organisation of the code as modules and submodules and shows how system responsibilities are partitioned across them.
+
+When to use a decomposition view:
+
+- **Achieve quality attributes**. For example to support modifiability, to encapsulate changing parts of the system in modules, so the impact of change is localised.
+- **Build vs buy decisions**. Some modules may be available from third parties, or be available from previous projects. These modules already have a set of responsibilities implemented, the remaining responsibilities can then be decomposed around the established modules.
+- **Product line implementation**. To distinguish common modules, used in most products and modules.
+- **Team allocation**. To allow implementation of different responsibilities in parallel.
+
+Also useful for reasoning about and communicating the structure of software.
+
+### Uses Style
+
+### Generalisation Style
+
+### Layered Style
+
+### Aspects Style
+
+### Data Model Style
+
+## Component-and-connector Views
+
+Component-and-connector (C&C) views document the system's units of execution.
+
+## Allocation Styles Views
+
+Allocation views document the relations between the system's software and non-software resources of the development and execution environment.
