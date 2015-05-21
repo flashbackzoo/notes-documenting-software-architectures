@@ -27,19 +27,17 @@ The book attempts to answer the question:
 
 ### Why Document Software Architecture?
 
-A good architecture is useless if people using it don't know what it is, can't understand it, or misunderstand it and apply it incorrectly. This means the time spent designing it has been wasted.
+A good architecture is useless if people using it don't know what it is, can't understand it, or misunderstand it and apply it incorrectly.
 
 It delivers value to developers, deployers, testers, and clients.
 
 - **Education**. New team members, third party developers, or product owners.
 - **Communication**. Explaining how a feature is implemented or discussing an approach for a new feature.
-- **Analysis**. Provides a view of what needs to be tested when modifying or adding new code. Ensures features are implemented in accordance with the system's [quality attributes](#quality-attributes).
+- **Analysis**. What needs to be tested when modifying or adding code. Risk analysis when modifing or adding code. Ensures features are implemented in accordance with the system's quality attributes.
 
 ### Quality Attributes
 
-Quality attributes such as performance, reliability, security, and modifiability are important in almost all systems.
-
-Architecture is where these concerns are addressed.
+Quality attributes such as performance, reliability, security, and modifiability are important. Architecture is where these concerns are addressed.
 
 Different quality attributes require different attention. For example:
 
@@ -53,9 +51,7 @@ Views are the core concept associated with architecture documentation.
 
 > Documenting an architecture is a matter of documenting the relevant views then adding documentation that applies to more than one view.
 
-A documentation package can be composed of one or more view documents and documentation that explains how the views relate to one another.
-
-To document a bird's wing you may require views of: feathers, skeleton, circulation, a muscular view etc. None of these *are* the architecture, but together, they *convey* the architecture.
+A documentation package can be composed of one or more views and documentation explaining how the views relate to one another.
 
 Different views expose different quality attributes and support different goals. For example a *layered view* tells you about portability, a *deployment view* lets you reason about performance and reliability.
 
@@ -66,7 +62,7 @@ The documentation for a view contains:
 - Specification of the elements' interfaces and behaviour.
 - Rationale and design information.
 
-The documentation that applies to all of the view contains:
+The documentation that applies to *all of the views* contains:
 
 - Introduction to the entire package.
 - Constraints and rationale for the overall architecture.
